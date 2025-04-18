@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/imgs/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Css File -->
+  <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="col-1">
+      <div class="card-front">
+        <div class="logo">
+          <span class="cir-1"></span>
+          <span class="cir-2"></span>
+        </div>
+        <div class="num">0000 0000 0000 0000</div>
+        <div class="info">
+          <div class="user-name">Jane Appleseed</div>
+          <div class="user-birth"><span class="month">00</span>/<span class="year">00</span></div>
+        </div>
+      </div>
+      <div class="card-back">
+        <div class="card-cvc">000</div>
+      </div>
+    </div>
+    <div class="col-2">
+      <div class="succes-message">
+        <img src="./src/imgs/icon-complete.svg" alt="icon-complete">
+        <h1>Thank You</h1>
+        <p>We've added your card details </p>
+        <button class="btn">Confirm</button>
+      </div>
+      <form action="#" id="form">
+        <div class="f-1">
+          <label for="cardName">Cardholder Name</label>
+          <input type="text" name="cardName" id="cardName" placeholder="e.g. Jane Appleseed" maxlength="25">
+          <p class="error-ms">please enter your name</p>
+        </div>
+        <div class="f-2">
+          <label for="cardnumber">Card Number</label>
+          <input type="text" name="cardnumber" id="cardnumber" placeholder="e.g. 1234 5678 9123 0000" maxlength="16">
+          <p class="error-ms">Wrong format, numbers only</p>
+        </div>
+        <div class="f-3">
+          <div class="data">
+            <label for="data">Exp. Date (MM/YY)</label>
+            <div class="inputs">
+              <input type="text" name="data" id="month" placeholder="MM" maxlength="2">
+              <input type="text" name="data" id="year" placeholder="YY" maxlength="4">
+            </div>
+            <p class="error-ms">cant't be blank</p>
+          </div>
+          <div class="cvc">
+            <label for="cvc">CVC</label>
+            <input type="text" name="cvc" id="cvc" placeholder="e.g. 123" maxlength="3">
+            <p class="error-ms">cant't be blank</p>
+          </div>
+        </div>
+        <button class="btn">Confirm</button>
+      </form>
+    </div>
+  </div>
+<script src="./src/js/main.js"></script>
+</body>
+</html>
