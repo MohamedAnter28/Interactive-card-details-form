@@ -330,14 +330,18 @@ form.ative{
 
 
 @media (max-width: 415px){
+  .col-1 .card-front , .col-1 .card-back {
+    width: 225px;
+  }
+
   .col-1 .card-front{
-    left: 10px;
-    top: 150px;
+    left: 25px;
+    top: 120px;
   }
 
   .col-1 .card-back {
     top: 9%;
-    left: 100px;
+    left: 120px;
 }
 
   #form{
@@ -349,5 +353,6 @@ form.ative{
     left: 17%;
   }
 }
+
 
 
